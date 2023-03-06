@@ -1,0 +1,294 @@
+html, body {
+	min-height: 100%;
+	}
+	
+body {
+	color: #ccc;
+	font-size: 100%;
+	font-family: amboy-black, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background: #000;
+	}
+
+.container {
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+/* =================================================== LINKS =================================================== */
+
+a {
+	position: relative;
+	text-decoration: underline;
+	color: #ccc;
+	}
+
+a:hover {
+	text-decoration: underline;
+	} 
+
+a:active, a:focus {
+	top: 1px; 
+}
+
+/* =================================================== LISTS =================================================== */
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+ul.list-unstyled, ul.list-inline { 
+	list-style-type: none;
+}
+
+ul.list-inline li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* =================================================== UTILITIES =================================================== */
+
+.center {
+	text-align:center;
+}
+
+/* =================================================== GRID =================================================== */
+.grid:before,
+.grid:after {
+	content: "";
+	display: table;
+}
+
+.grid:after {
+	clear: both;
+}
+
+.grid {
+	zoom: 1;
+}
+
+.grid {
+	display: block;
+	position: relative;
+	padding: 10px;
+}
+.grid-left33 {
+	float: left;
+	width: 33%;
+}
+
+.grid-left50 {
+	float: left;
+	width: 50%;
+}
+
+.grid-right50 {
+	float: right;
+	width: 50%;
+}
+
+.grid-right66 {
+	float: right;
+	width: 66%;
+}
+
+@media screen and (max-width: 767px) {
+	.grid > * {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+/* =================================================== LOADING =================================================== */
+
+#loading {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+#loading .logo, #loading img {
+	border: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+
+/* =================================================== LOGO + INDEX =================================================== */
+
+svg {
+	fill: #ccc;
+	width: 30px;
+	height: 30px;
+}
+
+.logo {
+	padding: 5px;
+	display: inline-block;
+	border-radius: 50%;
+	opacity: .8;
+}
+
+.logo img {
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.main:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 700px;
+	height: 100%;
+	background: #000;
+	opacity: .3;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.main {
+	position: relative;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+h1, h2 {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-family: blenny, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 42px;
+}
+
+h2 {
+	margin-bottom: 45px;
+	font-family: amboy-black,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
+}
+
+h2.follow-me {
+	margin-bottom: 15px;
+}
+
+h2.latest-videos {
+	margin-top: 60px;
+	margin-bottom: 15px;
+}
+
+
+p.vinyl-cover-container {
+ margin: 0;
+ padding: 0;
+ text-align: left;
+}
+
+img.vinyl-cover {
+	border-radius: 10px;
+	width: 100%;
+	max-width: 300px;
+}
+
+.order {
+	text-align: left;
+	font-size: 18px;
+}
+
+.youtube-vids {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.youtube-vids li {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+@media screen and (max-width: 767px) { 
+	.main:before {
+		width: 480px;
+		left: 50%;
+		margin-left: -240px;
+	}
+
+	.main {
+		margin: 0 auto;
+	}
+
+	img.vinyl-cover {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+/* =================================================== VIDEO =================================================== */
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.viewport-header {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =================================================== SHOPGRID =================================================== */
+ul.shopgrid {
+	position: relative;
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+ul.shopgrid li {
+	display: inline-block;
+	width: 229px;
+	height: 229px;
+	margin: 3px;
+}
+
+ul.shopgrid img {
+	display: inline-block;
+	width: 227px;
+	height: 227px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	ul.shopgrid {
+		text-align: center;
+	}
+}
