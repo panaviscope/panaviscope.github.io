@@ -35,6 +35,14 @@ a:active, a:focus {
 	top: 1px; 
 }
 
+.social-icons a {
+	text-decoration: none;
+}
+
+.social-icons a:hover {
+	text-decoration: none;
+}
+
 /* =================================================== LISTS =================================================== */
 
 ul {
