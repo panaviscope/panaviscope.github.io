@@ -24,6 +24,9 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         body {
@@ -31,9 +34,13 @@
             font-weight: 500;
             font-size: 16px;
             background-color: #1a1a1a;
+            display: -webkit-flex;
             display: flex;
+            -webkit-flex-direction: column;
             flex-direction: column;
+            -webkit-align-items: center;
             align-items: center;
+            -webkit-justify-content: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
@@ -108,13 +115,16 @@
             min-width: 400px; 
             max-width: 90%;  
             width: auto;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
 
         a:hover {
             background-color: #555;
         }
-         #video-background {
+
+        #video-background {
             position: fixed;
             top: 0;
             left: 0;
@@ -123,12 +133,14 @@
             object-fit: cover;
             z-index: -1;
         }
+
         .container {
             text-align: center;
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            margin: 0 10px;
         }
     </style>
 </head>
