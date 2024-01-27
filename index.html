@@ -123,7 +123,17 @@
         a:hover {
             background-color: #555;
         }
-        
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
         .container {
             position: fixed;
             top: 0;
@@ -155,6 +165,11 @@
     </div>
 
     <div id="loaded" style="display:none;">
+
+        <video id="video-background" playsinline autoplay muted loop poster="img/poster.png">
+          <source src="img/panaviscope.mp4" type="video/mp4">
+        </video>
+
         <div class="container">
             <div class="profile-pic"></div>
             <div class="username">@panaviscope</div>
@@ -162,7 +177,6 @@
             <div class="link-container">
                 <a href="https://open.spotify.com/artist/4v8etUh3qt9jHliW6kg697">Spotify</a>
                 <a href="https://www.instagram.com/panaviscope/">Instagram</a>
-                <a href="https://panaviscope.gumroad.com/">Gumroad</a>
                 <a href="https://www.youtube.com/channel/UCQJ4AOVvLbTTLQEa0uQseDw">YouTube</a>
                 <a href="https://twitter.com/panaviscope">Twitter</a>
             </div>
